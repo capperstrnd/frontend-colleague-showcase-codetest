@@ -1,0 +1,16 @@
+.grid {
+    background-color: var(--surface-dark);
+    display: grid;
+    inline-size: calc(100vw - 2rem);
+    margin-inline: auto;
+    max-inline-size: 1440px;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    gap: 1rem;
+}
+
+
+@media (prefers-color-scheme: light) {
+    .grid {
+        background-color: var(--surface);
+    }
+}

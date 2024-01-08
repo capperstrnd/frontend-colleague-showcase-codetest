@@ -47,8 +47,6 @@ use one. Docker, however, is acceptable.
 
 ## Instructions
 
-This base setup is created using `npx create-react-app . --template typescript` with
+Install: `npm install`
 
-In the project directory, you can run:
-
-To run it `npm start` and head on to [http://localhost:3000](http://localhost:3000) in your favorite browser.
+Run it: `npm start` and head on to [http://localhost:3000](http://localhost:3000) in your favorite browser.
