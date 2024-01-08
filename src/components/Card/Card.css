@@ -1,4 +1,9 @@
 .card {
     display: grid;
     background-color: var(--on-primary-dark);
+    padding: 1rem;
+
+    * {
+        margin: 0;
+    }
 }
