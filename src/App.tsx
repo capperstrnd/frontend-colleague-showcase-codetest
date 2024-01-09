@@ -6,7 +6,7 @@ import Grid from './components/Grid/Grid';
 import { fetchFromApi } from './services/ApiHandler';
 import { Employee } from './utils/types';
 
-const pageSize = 24;
+const pageSize = 8;
 
 const App: React.FC = () => {
 
@@ -16,17 +16,13 @@ const App: React.FC = () => {
 	const [totalPages, setTotalPages] = useState<number>(-1);
 
 	useEffect(() => {
-	}, []);
-
-	useEffect(() => {
 		sliceSelection();
 	}, [colleagues, page]);
 
 	async function retrieveEmployees() {
 		const fetched = await fetchFromApi();
 
-		const pages = ((fetched!.length / 24)).toFixed(0);
-		console.log(pages);
+		const pages = ((fetched!.length / pageSize)).toFixed(0);
 		setTotalPages(parseInt(pages));
 		setPage(0);
 		setColleagues(fetched);

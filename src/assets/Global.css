@@ -1,11 +1,11 @@
 :root {
-  --primary: #eceae0; /* Replace with your color value */
-  --secondary: #c8b8db; /* Replace with your color value */
-  --tertiary: #b78fca; /* Replace with your color value */
-  --quaternary: #502f4c; /* Replace with your color value */
-  --quinary: #1f1f1f; /* Replace with your color value */
-  --light: #fefefe;
-  --dark: #1f1f1f;
+  --primary: hsl(51, 25%, 90%); /* Replace with your color value */
+  --secondary: hsl(267, 33%, 79%); /* Replace with your color value */
+  --tertiary: hsl(281, 36%, 68%); /* Replace with your color value */
+  --quaternary: hsl(307, 26%, 25%); /* Replace with your color value */
+  --quinary: hsl(0, 0%, 12%); /* Replace with your color value */
+  --light: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 12%);
 
   --fs-step--2: clamp(0.5206rem, 0.4235rem + 0.4859vw, 0.8rem);
   --fs-step--1: clamp(0.625rem, 0.4946rem + 0.6522vw, 1rem);
