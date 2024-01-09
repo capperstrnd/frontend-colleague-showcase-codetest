@@ -44,9 +44,18 @@ use one. Docker, however, is acceptable.
 ## Notes and documentation
 
 - Features and functional requirements, due to not having to completely finish this and spend a reasonable amount of time on this one I won't necessarily focus on hitting all of these points. Instead I might write a comment on how I would approach specific ones.
+- In the best of worlds, you'd be able to have pagination through the API.
 
 ## Instructions
+
+Set up .env with proper values, duplicate from .example.env
 
 Install: `npm install`
 
 Run it: `npm start` and head on to [http://localhost:3000](http://localhost:3000) in your favorite browser.
+
+Press "Load colleagues" button to load in everything
+
+## Result
+
+![Small snippet of a card](image.png)

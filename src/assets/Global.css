@@ -1,0 +1,105 @@
+:root {
+  --primary: #eceae0; /* Replace with your color value */
+  --secondary: #c8b8db; /* Replace with your color value */
+  --tertiary: #b78fca; /* Replace with your color value */
+  --quaternary: #502f4c; /* Replace with your color value */
+  --quinary: #1f1f1f; /* Replace with your color value */
+  --light: #fefefe;
+  --dark: #1f1f1f;
+
+  --fs-step--2: clamp(0.5206rem, 0.4235rem + 0.4859vw, 0.8rem);
+  --fs-step--1: clamp(0.625rem, 0.4946rem + 0.6522vw, 1rem);
+  --fs-step-0: clamp(0.75rem, 0.5761rem + 0.8696vw, 1.25rem);
+  --fs-step-1: clamp(0.9rem, 0.6696rem + 1.1522vw, 1.5625rem);
+  --fs-step-2: clamp(1.08rem, 0.7763rem + 1.5185vw, 1.9531rem);
+  --fs-step-3: clamp(1.08rem, 0.7763rem + 1.5185vw, 1.9531rem);
+  --fs-step-4: clamp(1.08rem, 0.7763rem + 1.5185vw, 1.9531rem);
+  --fs-step-5: clamp(1.08rem, 0.7763rem + 1.5185vw, 1.9531rem);
+}
+
+html {
+  color-scheme: light dark;
+  background: var(--quinary);
+  color: var(--primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.2;
+  font-size: var(--fs-step-0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.flow > * + * { /* Flow, everything except first*/
+  margin-top: var(--flow-space, 1em); /* em, so relative */
+}
+
+h1 {
+  --flow-space: 1.5em;
+  font-size: var(--fs-step-5);
+}
+
+h2 {
+  font-size: var(--fs-step-4);
+}
+
+h3 {
+  font-size: var(--fs-step-3);
+}
+
+h4 {
+  font-size: var(--fs-step-2);
+}
+
+h5 {
+  font-size: var(--fs-step-1);
+}
+
+h6 {
+  font-size: var(--fs-step-1);
+  font-style: italic;
+}
+
+.footnote {
+  font-size: var(--fs-step--1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img,
+svg,
+video,
+figure {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+      background: var(--primary);
+      color: var(--dark);
+  }
+}
+
+header {
+  margin-inline: 1rem;
+}
+
+.r-border {
+  border-radius: 6px;
+}
+
+/* DESKTOP */
+@media (width > 1128px) {}
+
+/* TABLET FOLDABLE */
+@media (700px < width < 1128px) {}
+
+/* MOBILE */
+@media (width < 700px) {}

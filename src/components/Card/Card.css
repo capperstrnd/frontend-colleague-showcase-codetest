@@ -1,9 +1,62 @@
 .card {
     display: grid;
-    background-color: var(--on-primary-dark);
+    background-color: var(--quaternary);
+    color: var(--primary);
     padding: 1rem;
+    transition: transform ease-in-out 0.14s;
 
-    * {
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .avatar {
         margin: 0;
+        aspect-ratio: .85;
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        margin-top: -1rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    p { margin-block: 0.5rem; }
+
+    .cardContent {
+        position: relative; 
+        margin-top:.75rem;
+
+        .name {
+            max-width: 230px;
+        }
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 0.5rem;
+        position: absolute;
+        top: 0.75rem;
+        right: 0;
+
+        a {
+            text-decoration: none;
+            color: var(--secondary);
+
+            &:active {
+                color: var(--primary);
+            }
+            &:hover {
+                color: var(--tertiary);
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion) { 
+    .card {
+        transition: none;
     }
 }
